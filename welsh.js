@@ -1,14 +1,14 @@
 
-var Translation = (function(argument) {
-	var welsh = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
+var Translate = (function(argument) {
+	var welsh = {"merry":"llawen", "christmas":"nadolig", "and":"ac", "happy":"hapus", "new":"newydd", "year":"blwyddyn"};
 
-	return {
-		argument.getWelshTranslation = function() {
-			var input = $("#text-input").val();
-			
-		};
 
-	}
+	argument.getWelshTranslation = function() {
+		var input = $("#message-input").val();
+		return welsh;
+	};
+
+	return argument;
 })(Translate);
 
 
