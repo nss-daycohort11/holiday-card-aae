@@ -1,0 +1,3 @@
+var Translate = (function() {
+	return {};
+})();
