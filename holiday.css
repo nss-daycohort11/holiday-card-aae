@@ -1,0 +1,61 @@
+#bodydiv {
+	width:75%;
+	margin: 25px auto 0;
+	text-align: center;		
+}
+
+#message-input{
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+#input {
+	color: white;
+	font-size: 1.5em;
+}
+
+#buttons {
+	display: block;
+
+}
+
+#translate {
+	background-color: #53bbb4;
+	color: white;
+	border: none;
+	font-size: 1.5em;
+	margin-top: 25px;
+}
+
+#vietnamese {
+	background-color: #c25975;
+	color: white;
+	border: none;
+	font-size: 1.2em;
+	padding: 4px; 
+	margin: 5px;
+}
+
+#french {
+	background-color: steelblue;
+	color: white;
+	border: none;
+	font-size: 1.2em;
+	padding: 4px; 
+	margin: 5px;
+}
+
+#welsh {
+	background-color: magenta;
+	color: white;
+	border: none;
+	font-size: 1.2em;
+	padding: 4px;
+	margin: 5px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #b1a1a1;
+}
