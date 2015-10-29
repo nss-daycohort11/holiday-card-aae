@@ -17,6 +17,7 @@ var Translate = (function(argument) {
             console.log("welshWord", vietnameseWord);
             vietnameseArray.push(vietnameseWord);
         }
+
         var translation = vietnameseArray.join(" ");
         console.log("translation", translation);
         //concat corresponding welsh value into new string

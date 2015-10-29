@@ -16,6 +16,21 @@ var Translate = (function(argument) {
             console.log("frenchWord", frenchWord);
             frenchArray.push(frenchWord);
         }
+        //attempt at translation link
+        var translateLink = "http://translate.google.com/translate_tts?ie=UTF-8&q=";
+        for (var i = 0; i < frenchArray.length; i++) {
+          translateLink += frenchArray[i];
+          if (frenchArray[i] === frenchArray.length - 1) {
+            break;
+          } else {
+            translateLink += "%20";
+          }
+        }
+        translateLink += "&tl=fr&total=1&idx=0&textlen=23&prev=input";
+        var listenString = "<a href=" + translateLink + ">Listen to Translation</a>"
+
+        $("#listen").html(listenString);
+
         var translation = frenchArray.join(" ");
         console.log("translation", translation);
         //concat corresponding welsh value into new string

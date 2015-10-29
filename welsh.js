@@ -18,6 +18,21 @@ var Translate = (function(argument) {
 			console.log("welshWord", welshWord);
 			welshArray.push(welshWord);
 		}
+		//attempt at translation link
+		var translateLink = "http://translate.google.com/translate_tts?ie=UTF-8&q=";
+		for (var i = 0; i < welshArray.length; i++) {
+		  translateLink += welshArray[i];
+		  if (welshArray[i] === welshArray.length - 1) {
+		    break;
+		  } else {
+		    translateLink += "%20";
+		  }
+		}
+		translateLink += "&tl=cy&total=1&idx=0&textlen=23&prev=input";
+		var listenString = "<a href=" + translateLink + ">Listen to Translation</a>"
+
+		$("#listen").html(listenString);
+
 		var translation = welshArray.join(" ");
 		console.log("translation", translation);
 		//concat corresponding welsh value into new string
