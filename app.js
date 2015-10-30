@@ -5,15 +5,18 @@ $(document).ready(function() {
 	var output;
 
 	$("#welsh").click(function() {
-		chosenLanguage = Translate.getWelshTranslation();
+		var input = $("#message-input").val();
+		chosenLanguage = Translate.getWelshTranslation(input);
 	});
 
 	$("#french").click(function() {
-		chosenLanguage = Translate.getFrenchTranslation();
+		var input = $("#message-input").val();
+		chosenLanguage = Translate.getFrenchTranslation(input);
 	});
 
 	$("#vietnamese").click(function() {
-		chosenLanguage = Translate.getVietnameseTranslation();
+		var input = $("#message-input").val();
+		chosenLanguage = Translate.getVietnameseTranslation(input);
 	});
 
 	$("#translate").click(function() {
