@@ -1,27 +1,27 @@
 $(document).ready(function() {
 
 	var chosenLanguage;
-	var inputDiv = $("#input");
+	var inputDiv = document.getElementById("input");
 	var output;
 
-	$("#welsh").click(function() {
+	document.getElementById("welsh").addEventListener("click", function() {
 		chosenLanguage = Translate.getWelshTranslation();
 	});
 
-	$("#french").click(function() {
+	document.getElementById("french").addEventListener("click", function() {
 		chosenLanguage = Translate.getFrenchTranslation();
 	});
 
-	$("#vietnamese").click(function() {
+	document.getElementById("vietnamese").addEventListener("click", function() {
 		chosenLanguage = Translate.getVietnameseTranslation();
 	});
 
-	$("#translate").click(function() {
+	document.getElementById("translate").addEventListener("click", function() {
 		// console.log(chosenLanguage);
 		var textString = chosenLanguage;
 		console.log(textString);
 		output = "<p>" + textString + "</p>";
-		inputDiv.html(output);
+		inputDiv.innerHTML = output;
 	});
 
 });

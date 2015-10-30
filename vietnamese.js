@@ -3,7 +3,7 @@ var Translate = (function(argument) {
 
 
     argument.getVietnameseTranslation = function() {
-        var input = $("#message-input").val();
+        var input = document.getElementById("message-input").value;
         console.log(input);
         //split the text input into an array
         var englishArray = input.split(" ");
